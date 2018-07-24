@@ -1,0 +1,119 @@
+/* 通用样式 common style */
+body{font-family:PingFang SC,STHeiti Light,Microsoft YaHei;}
+ul{list-style:none;margin:0;padding:0}
+ul li{list-style:none;}
+a,a:hover,a:focus{text-decoration: none;}
+
+.load-content{background-color:#000;color:#fff;opacity:0.80;position:relative;background-clip:padding-box;padding:10px 10px;min-height:50px;border:0;border-radius:6px;outline:0;box-shadow:0 0 0;}
+.load-body{text-align:center;color: #909093;}
+.load-dialog{position:absolute;top:30%;left:50%;margin:0;margin-left:-25%;width:50%;}
+
+/* 管理平台框架样式 management system framework style */
+.mgm-head{position: fixed;left:0;right:0;top:0;height:80px;background: #4a90e2;z-index: 1010;-webkit-box-shadow: 0 0 6px #555;-moz-box-shadow: 0 0 6px #555;box-shadow: 0 0 6px #555;}
+.mgm-head-logo{float:left;background: url("../image/admin/logo.png") no-repeat;background-position: 0;width:300px;height:46px;margin-top:17px;margin-left:40px;padding-left:55px;color:#fff;font-size:24px;line-height:46px;}
+.mgm-head-oper{float:right;color:#fff;margin-right:60px;line-height:80px;}
+.mgm-head-oper a{color:#fff;}
+.mgm-footer-content{float:right;margin-right:60px;}
+.mgm-main{width:auto;padding-top:83px;}
+.mgm-main-menu{position:fixed;width: 260px;height:100%;overflow-y:scroll;background: #f4f4f4;z-index: 9;}
+.mgm-main-menu dl{margin: 0 20px;margin-top: 15px;}
+.mgm-main-menu dl dt{height: 32px;font-size: 18px;line-height: 32px;text-indent: 2px;border-bottom: 1px solid #cdcdcd;color: #666;cursor:pointer;font-weight:200;}
+.mgm-main-menu dl dt i{width: 14px;height: 14px;display: inline-block;background: url("../image/admin/hj_ico.png") 0 -18px;float: right;margin-right: 20px;margin-top: 9px;}
+.mgm-main-menu dl.now-menu dt i{background-position: -21px -18px;} 
+.mgm-main-menu dl.now-menu dd{display:block;}
+.mgm-main-menu dl dd{display:none;font-size: 16px;height: auto;overflow: hidden;margin-top:10px;}
+.mgm-main-menu dl dd ul{margin: 0;padding: 0;list-style: none;}
+.mgm-main-menu dl dd li{text-indent: 5px;height: 30px;line-height: 30px;}
+.mgm-main-menu dl dd li a{color:#3c3c3c;}
+.mgm-main-menu dl dd li a:hover{color:#4a90e2;}
+.mgm-main-menu dl dd li i{display: inline-block;width: 10px;height: 10px;background: url("../image/admin/hj_ico.png") -17px 0;margin-right: 15px;vertical-align: middle;margin-top: -4px;}
+.mgm-main-menu dl dd li.now-menu-item a{font-weight:700;color:#4a90e2;}
+.mgm-main-menu dl dd li.now-menu-item a i{background-position: 0 0;}
+.mgm-main-content{position: relative;margin-left: 290px;padding-top:20px;}
+
+/* 管理平台内容基本样式 content title style */
+.content-title{border-bottom: 1px solid #cdcdcd;color: #666;font-size:18px;}
+.search-operation, .table-container{margin-top:15px;margin-left:20px;margin-right:20px;}
+.search-operation form{margin-top:5px;}
+.search-operation .row{margin:15px 0;}
+.search-operation .form-group{min-width:320px;}
+.search-operation .form-group label{min-width:80px;}
+.search-operation .form-group input{background-color:#fff}
+.operation-container{text-align:right;}
+.operation-container button{margin-left:5px;margin-bottom:5px;margin-top:5px;}
+.nav-container, .tab-content{margin-top:15px;margin-left:20px;margin-right:20px;}
+.table-first-td{width:130px;font-weight:bold;}
+.table-first-td + td{word-wrap:break-word;word-break:break-all;}
+
+.auth-list ul li{border-top:1px solid #dbdbdb;margin-bottom:10px;min-height:34px;line-height:34px;}
+.auth-list ul li p{margin:0;font-size:15px;display:inline-block;}
+.auth-list ul li p:hover{background:#eaeaea;}
+.auth-list input[type=checkbox]{margin-left:5px;margin-right:2px;}
+
+/** form css a start**/
+.form-mobile-a{margin-top:10px;padding:15px;padding-bottom:10px;background:#fff;border-radius:15px;}
+.form-mobile-a .form-group {position:relative;margin-left:0;margin-right:0;}
+.form-mobile-a .form-group input.form-control,.form-mobile-a .form-group textarea.form-control{border-top:none;border-left:none;border-right:none;box-shadow:none;}
+.form-mobile-a .form-group .form-control.imgPreview{height:auto;text-align:center;}
+.form-mobile-a .form-group .label-required{color:red;margin-right:5px;}
+.form-mobile-a .form-group a.action{position:absolute;left:0px;top:25px;display:block;width:39px;height:34px;}
+.form-mobile-a .form-group a.action.select{display:none;width:11px;height:8px;top:17px;right:4px;background:none;background-size:100% 100%;}
+.form-mobile-a .form-group a.action.search{background:url(../img/search-icon.png) no-repeat 24px 13px;background-size:16px 15px;pointer-events:auto;}
+.form-mobile-a .form-group a.action.date{top:28px;width:32px;height:28px;background:url(../img/date-icon-mgm.png) no-repeat;}
+
+.form-mobile-a .form-group .onShow,.form-mobile-a .form-group .onFocus{color:grey;}
+.form-mobile-a .form-group .onCorrect{color:green;}
+.form-mobile-a .form-group .onError{color:#fc4a61;}
+
+.form-mobile-a .form-group.zzrw_hidden{display:none;}
+.form-mobile-a .form-group.zzrw_checkbox .checkbox-inline{margin-left:10px;}
+.form-mobile-a .form-group.zzrw_display .form-control{border-left:0 none;border-right:0 none;border:0 none;box-shadow:none;border-radius:0;background:#f5f5f5}
+.form-mobile-a .form-group.zzrw_preview .form-control{height:auto;text-align:center;}
+.form-mobile-a .form-group.zzrw_date .form-control{}
+.form-mobile-a .form-group.zzrw_area{height:auto;padding-top:0px;}
+.form-mobile-a .form-group.zzrw_area label{left:0;width:100%;height:43px;line-height:43px;border-radius:0;}
+.form-mobile-a .form-group.zzrw_area .form-control{padding:0;height:auto;text-indent:0px;border:0 none;box-shadow:none;border:1px solid #ccc;}
+.form-mobile-a .form-group.zzrw_area .form-area{position:relative;display:inline-block;padding: 5px 0;width: 33%;height:34px;border:0 none;}
+.form-mobile-a .form-group.zzrw_area .form-area select{width:100%;text-indent:0px;border:0 none;background-color:#fff;background-image:none;border-right:1px solid #ccc;}
+.form-mobile-a .form-group.zzrw_area .form-area a.action.select{right:15px;}
+.form-mobile-a .form-group.zzrw_file .form-control{margin-bottom:5px;}
+.form-mobile-a .form-group .btn{float:right;}
+.form-mobile-a .form-group.zzrw_file .btn{float:none;text-decoration: underline;}
+.form-mobile-a .form-group .btn.btn-primary {margin-right:20px;}
+
+.form-mobile-a .form-group.zzrw_button .btn{margin-right:20px;}
+
+/** form css a end**/
+
+/** totop css start **/
+
+#totop {position: fixed;bottom: 60px;right: 0px;z-index: 99;display: none;cursor: pointer}
+* html #totop {position: absolute;right: 5%;display: none;padding-right: 16px;white-space: nowrap;cursor: pointer;top: expression(eval(document.documentElement.scrollTop +  document.documentElement.clientHeight) -112+"px")}
+
+#totop a {display:block;text-align:center;width:25px;height:82px;background:#337ab7;color:#fff;}
+
+/** totop css end **/
+
+/** addGroup css start**/
+.editlist{font-size: 16px;}
+.editlist li{margin-bottom: 10px;}
+.warning{margin-bottom: 20px;text-align: center;color: rgb(86, 178, 255);font-size: 14px;width: 180px;position: absolute;float: right;margin-top: -23px;margin-left: 140px;vertical-align: baseline;} 
+
+/** addGroup css end**/
+
+/** loading start **/
+.mask {background: #000;left: 0px;opacity: 0.5;position: absolute;top: 0px;z-index: 3;filter: alpha(opacity = 50);-moz-opacity: 0.5;*-khtml-opacity: 0.5;display: none;width:100%;height:100%;}
+.zj-confirm{border-radius:6px;width: 270px;margin: 0 auto;left: 50%;position: absolute;top: 30%;margin-left: -135px;background: #fff;}
+.zj-confirm img{width:270px;}
+.zj-confirm label{margin-bottom:0;height:40px;line-height:40px;width:134.5px;text-align:center;color:#888888;font-weight:600;border-top:1px solid #dbdbdb;font-size:16px;}
+.zj-confirm-title{height:50px;line-height:50px;font-size:18px;font-weight:600;text-align:center;margin-bottom:0;}
+.zj-confirm-msg{font-size:16px;color:#888888;text-align:center;margin-bottom:10px;padding-left:20px;padding-right:20px;text-align:justify;}
+.zj-loading img{position:absolute;top:300px;left:50%;margin-top:-50px;margin-left:-50px;height: 100px;width: 100px;}
+/** loading end **/
+
+/** noAuthPage css start **/
+.noAuth{margin-top:200px;position:absolute;margin-left:200px;}
+.noAuth .content{font-size: 30px;position:relative;}
+.noAuth .content .img{width: 78px;margin-top:-16px;float:left;margin-right:20px;}
+
+/** noAuthPage css end **/
